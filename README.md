@@ -2,6 +2,8 @@
 
 Sports Facility Booking Platform API - Sri Lanka
 
+🌐 **Live Site**: <a href="https://spiritx.mehara.io/" target="_blank">https://spiritx.mehara.io/</a>
+
 ## 📋 Overview
 
 The backend for SportsBookSL, a comprehensive sports facility booking platform for Sri Lanka. This server provides APIs for user authentication, facility bookings, trainer management, financial aid applications, donations, and more.
@@ -155,19 +157,32 @@ yarn dev
 
 The server will run on the port specified in your `.env` file (default: 5001) and will be accessible at [http://localhost:5001](http://localhost:5001).
 
-## 🌦️ Weather Integration with AI Analysis
+## 🌦️ AI-Powered Weather Assistant
 
-The backend includes a powerful weather analysis system that works in conjunction with the frontend's AI-powered weather assistant:
+The backend provides robust support for SportsBookSL's cutting-edge AI-powered weather assistant:
 
-1. **Data Collection**: The `weatherController.js` retrieves weather data from OpenWeather API
-2. **Data Processing**: Weather data is processed and analyzed
-3. **AI Integration**: Processed data is sent to Google's Gemini AI via the frontend for more advanced analysis
-4. **Intelligent Recommendations**: The system provides facility-specific recommendations based on:
-   - Current and forecasted weather conditions
-   - Sport type requirements
-   - Facility specifications
+- **Comprehensive Weather API Integration**: The `weatherController.js` manages integration with OpenWeather API, retrieving detailed weather data including temperature, precipitation, wind conditions, humidity, and UV index
+  
+- **Advanced Data Processing Pipeline**: Raw weather data undergoes sophisticated processing before being analyzed by Google's Gemini AI:
+  - Data normalization and formatting
+  - Time-series analysis for weather patterns
+  - Location-specific parameter adjustments
+  - Sport-specific condition evaluation
 
-This integration helps users make informed decisions about bookings and suggests suitable alternatives when weather conditions are unfavorable for outdoor activities.
+- **Intelligent Recommendation Engine**:
+  - Evaluates weather suitability scores for different sports
+  - Considers facility-specific factors (covered areas, drainage systems, lighting)
+  - Generates time-slot recommendations based on weather forecast
+  - Identifies and ranks alternative indoor facilities when outdoor conditions are unfavorable
+
+- **REST API Endpoints for Weather Services**:
+  - Current weather conditions by facility location
+  - Multi-day forecasts with hourly breakdowns
+  - Sport-specific suitability analyses
+  - Alternative facility recommendations
+  - Natural language weather summaries
+
+This system works seamlessly with the frontend's Gemini AI integration to deliver intelligent, context-aware weather guidance to users making sports facility bookings.
 
 ## 📝 API Documentation
 
