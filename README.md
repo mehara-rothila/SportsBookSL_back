@@ -113,9 +113,10 @@ SportsBookSL-back/
 
 ### Installation
 
-1. Navigate to the backend directory:
+1. Clone the repository:
    ```bash
-   cd backend
+   git clone https://github.com/mehara-rothila/SportsBookSL.git
+   cd SportsBookSL_back
    ```
 
 2. Install dependencies:
